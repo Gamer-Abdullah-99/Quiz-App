@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <style>
+    body {
+      background-color: black;
+      color: #dc3545;
+      font-size: large;
+      padding-left: 4%;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    #timer {
+      width: 15%;
+      border: 2px solid #dc3545;
+      border-radius: 20px;
+      padding: 2px;
+      text-align: center;
+      position: fixed;
+      left: 70%;
+    }
+
+    #timer p {
+      display: inline-block;
+      font-size: 40px;
+      margin: 2px;
+    }
+
+    button {
+      margin-left: 46%;
+    }
+  </style>
+
+</head>
+
+<body onload="quiz()">
+  <div class="main">
+    <h1>Quiz</h1>
+
+    <div id="timer">
+      <p id="min">5</p>
+      <p>:</p>
+      <p id="sec">0</p>
+    </div>
+  </div>
+  <br /><br />
+  <div class="q1">1. Who won 2014 FIFA Worlcup?</div>
+  <br>
+
+  <div class="form-check">
+    <input class="form-check-input ans1" type="radio" name="ques1" value="brazil" />
+    <label class="form-check-label q1Opt1" id="q1Opt1">
+
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input ans1" type="radio" name="ques1" value="germany" />
+    <label class="form-check-label q1Opt2" id="q1Opt2">
+
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input ans1" type="radio" name="ques1" value="argentina" />
+    <label class="form-check-label q1Opt3" id="q1Opt3">
+
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input ans1" type="radio" name="ques1" value="france" />
+    <label class="form-check-label q1Opt4" id="q1Opt4">
+
+    </label>
+  </div>
+
+
+  <br /><br />
+  <div class="q2">2. Who won 2018 FIFA Worlcup?</div>
+  <br>
+
+  <div class="form-check">
+    <input class="form-check-input ans2" type="radio" name="ques2" value="italy" />
+    <label class="for
+    m-check-label q2Opt1" id="q2Opt1">
+
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input ans2" type="radio" name="ques2" value="brazil" />
+    <label class="form-check-label q2Opt2" id="q2Opt2">
+
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input ans2" type="radio" name="ques2" value="germany" />
+    <label class="form-check-label q2Opt3" id="q2Opt3">
+
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input ans2" type="radio" name="ques2" value="france" />
+    <label class="form-check-label q2Opt4" id="q2Opt4">
+
+    </label>
+  </div>
+
+
+  <br /><br />
+  <div class="q3">3. Which player has won 3 Worldcups in his career?</div>
+  <br>
+
+  <div class="form-check">
+    <input class="form-check-input ans3" type="radio" name="ques3" value="pele" />
+    <label class="form-check-label q3Opt1" id="q3Opt1">
+
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input ans3" type="radio" name="ques3" value="maradona" />
+    <label class="form-check-label q3Opt2" id="q3Opt2">
+
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input ans3" type="radio" name="ques3" value="ronaldo" />
+    <label class="form-check-label q3Opt3" id="q3Opt3">
+
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input ans3" type="radio" name="ques3" value="ronaldinho" />
+    <label class="form-check-label q3Opt4" id="q3Opt4">
+
+    </label>
+  </div>
+
+
+  <br /><br />
+  <div class="q4">4. Which player is known as "El Pibe de Oro"?</div>
+  <br>
+
+  <div class="form-check">
+    <input class="form-check-input ans4" type="radio" name="ques4" value="ronaldinho" />
+    <label class="form-check-label q4Opt1" id="q4Opt1">
+
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input ans4" type="radio" name="ques4" value="pele" />
+    <label class="form-check-label q4Opt2" id="q4Opt2">
+
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input ans4" type="radio" name="ques4" value="maradona" />
+    <label class="form-check-label q4Opt3" id="q4Opt3">
+
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input ans4" type="radio" name="ques4" value="ronaldo" />
+    <label class="form-check-label q4Opt4" id="q4Opt4">
+
+    </label>
+  </div>
+
+
+  <br /><br />
+  <div class="q5">5. Which player is known as "El Pistolero"?</div>
+  <br>
+
+  <div class="form-check">
+    <input class="form-check-input ans5" type="radio" name="ques5" value="suarez" />
+    <label class="form-check-label q5Opt1" id="q5Opt1">
+
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input ans5" type="radio" name="ques5" value="messi" />
+    <label class="form-check-label q5Opt2" id="q5Opt2">
+
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input ans5" type="radio" name="ques5" value="ronaldo" />
+    <label class="form-check-label q5Opt3" id="q5Opt3">
+
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input ans5" type="radio" name="ques5" value="maradona" />
+    <label class="form-check-label q5Opt4" id="q5Opt4">
+
+    </label>
+  </div>
+  <br><br>
+  <button type="button" class="btn btn-outline-danger" onclick="showAns()">Submit</button>
+  <br><br>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
